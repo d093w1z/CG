@@ -18,7 +18,7 @@ def main():
     SCREEN = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
     CLOCK = pygame.time.Clock()
     SCREEN.fill(BLACK)
-    Points = ((2, 5), (9, 2))
+    Points = ((16, 3), (10, 17))
     pixels = Line(*Points)
 
     cords = buildCoords()
@@ -55,6 +55,7 @@ def DDA(P1, P2):
     m = dy/dx
 
     step = dx if m <= 1 else dy
+    step = abs(step)
 
     xinc = dx/step
     yinc = dy/step
