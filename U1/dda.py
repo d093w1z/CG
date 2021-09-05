@@ -18,7 +18,8 @@ def main():
     SCREEN = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
     CLOCK = pygame.time.Clock()
     SCREEN.fill(BLACK)
-    Points = ((16, 3), (10, 17))
+    Points = ((5, 8), (9, 5))
+    print(Points, ":")
     pixels = Line(*Points)
 
     cords = buildCoords()
@@ -69,7 +70,7 @@ def DDA(P1, P2):
 
     for p in tmpPixels:
         pixels.append((round(p[0]), round(p[1])))
-    print(pixels)
+    print([(p[0],19 - p[1]) for p in pixels])
     return pixels
 
 
@@ -119,6 +120,7 @@ def drawGrid(pixels):
             normY = round(y/BLOCKSIZE)
             if (normX, normY) in pixels:
                 pygame.draw.rect(SCREEN, WHITE, rect)
+    #            print((x,y))
             else:
                 pygame.draw.rect(SCREEN, GRAY, rect, 1)
 
