@@ -1,0 +1,35 @@
+opengl
+
+TODO/ideas:
+    opengl setup
+    freeglut installation
+    glut code/workflow
+    function signature/description
+
+intro
+    is a specification
+    graphics drivers provide the functions
+    comes already installed
+
+immediate vs retained;
+    immediate mode in syllabus
+    immediate:
+        
+
+windowing:
+    context creation:
+        opengl does not specify window management
+        window toolkit provides opengl context
+         uses this context to call functions
+
+functions: 
+    glClear    
+
+driver <-> glew <-> program
+screen<->GPU <-> driver <-> CPU <->glut <-> program
+
+
+coordinates transformations are done by multiplying matricies for every step.
+opengl expects normalised coordinates ie. in range from -1 to 1
+local coordinates are coordinates with respect to the local origin of the model.
+

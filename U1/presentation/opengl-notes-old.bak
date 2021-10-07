@@ -1,0 +1,36 @@
+opengl
+intro
+    is a specification
+    graphics drivers provide the functions
+    comes already installed
+
+extensions:
+    provides an API to interact with driver functions
+    will be using glew
+
+windowing:
+    context creation:
+        opengl does not specify window management
+        window toolkit provides opengl context
+        glew uses this context to call functions
+
+
+shaders:
+    shader program
+    used to define how data is represented on screen
+    uses GLSL(c type language)
+    
+    vertex:
+        used to define attributes of verticies
+    fragment:
+        used to define color of pixels/fragments
+
+objects:
+    vertex buffer
+        vertec attrib
+    vertex array
+    index
+
+driver <-> glew <-> program
+
+
